@@ -10,7 +10,7 @@ const LeftSideNav = ({ categories }) => {
                     categories.map(category => <p
                         className='text-start fw-bold'
                         key={category.id}>
-                        <Link>{category.name}</Link>
+                        <Link to={`/news_category/${category.id}`}>{category.name}</Link>
                     </p>)
                 }
             </div>
